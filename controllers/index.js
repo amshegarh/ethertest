@@ -1,7 +1,7 @@
 const EtherApi = require('../api/index')
 
 const BATCH_COUNT = 5
-const REQUIRED_BLOCKS = 25
+const REQUIRED_BLOCKS = 100
 
 function numberToFetchReq (number) {
   return EtherApi.getBlockByNumber({ blockNumber: number.toString(16) })
